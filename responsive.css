@@ -1,0 +1,43 @@
+@media(width >= 768px){
+    input{
+        width: 689px;
+        height: 64px;
+    }
+
+    header{
+        gap: 350px;
+    }
+
+    .main-container2{
+        gap: 535px;
+    }
+
+    .border1{
+        width: 590px;
+    }
+    .border2{
+        width: 660px;
+    }
+}
+
+@media(width >= 1440px){
+    input{
+        width: 736px;
+    }
+
+    header{
+        gap: 400px;
+    }
+    
+    .main-container2{
+        gap: 590px;
+    }
+
+    .border1{
+        width: 635px;
+    }
+    .border2{
+        width: 705px;
+    }
+
+}
