@@ -90,8 +90,12 @@ clickrotate()
         h3.innerHTML = `
         <h3 class="linki">/${data[0].phonetics}/</h3>
         `
-
-
+        xma.addEventListener('click', function(){
+            let audio = data[0].phonetics[1].audio
+            let audioElement = document.createElement('audio');
+            audioElement.setAttribute('src', audio);
+            audioElement.play();
+        })
         
         ul.innerHTML = `
         <ul>
@@ -128,4 +132,7 @@ form.addEventListener('submit',(e)=>{
      api()
 
 })
+
+
+
 
