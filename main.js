@@ -17,10 +17,34 @@ const keyb = document.querySelector('.keyb')
 const form = document.querySelector('form')
 const bachi = document.querySelector('.bachi')
 const xma = document.querySelector('.xma')
+const li = document.querySelector('li')
+const hidden = document.querySelector('.hidden')
+const ptichka = document.querySelector('.bachidze')
+const pirveli = document.querySelector('.pirveli')
+const meore = document.querySelector('.meore')
+const mesame = document.querySelector('.mesame')
 
+function  changefont(){
+    li.classList.toggle('change1')
+}
 
+function newsection(){
 
+    hidden.classList.toggle('show')
+}
 
+h2.addEventListener('click',()=>{
+    newsection()
+})
+
+ptichka.addEventListener('click',()=>{
+    newsection()
+    ptichka.classList.toggle('datrialeba')
+})
+
+pirveli.addEventListener('click',()=>{
+    changefont()
+})
 
 function darkmode(){
     document.body.classList.toggle('dark')
@@ -63,14 +87,17 @@ clickrotate()
         h4.innerHTML = `
         <h4>${data[0].meanings[0].partOfSpeech}</h4>`
 
-        linki.innerHTML = `
+        h3.innerHTML = `
         <h3 class="linki">/${data[0].phonetics}/</h3>
         `
 
+
+        
         ul.innerHTML = `
         <ul>
-                 <li>(etc.) A set of keys used to operate a typewriter,
-                     computer etc.</li>
+                 <li>
+                 ${data[0].meanings[0].definitions[0].phonetic} 
+                 </li>
                 <li>A component of many instruments including the piano, 
                     organ, and harpsichord consisting of usually black
                      and white keys that cause different tones to be 
