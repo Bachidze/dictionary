@@ -282,6 +282,9 @@ svg path{
 .change1::placeholder{
     color: white;
 }
+.xma{
+    cursor: pointer;
+}
 
 
 .shecvla{
